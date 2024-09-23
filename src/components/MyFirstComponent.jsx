@@ -14,7 +14,7 @@ export const MyFirstComponent = () => {
   return (
     <>
       <div>MyFirstComponent</div>
-      <div className="container bg-info-subtle mt-4">
+      <div className="container">
         <h1>Temas de React</h1>
         <ul>
             <li>Componentes</li>
@@ -23,7 +23,7 @@ export const MyFirstComponent = () => {
             <li>Props</li>
         </ul>
       </div>
-      <div className="container bg-success-subtle py-2">
+      <div className="container">
         <h1>Datos del Estudiante</h1>
         <p>Nombre: <strong>{ student.name }</strong></p>
         <p>Apellido: { student.last_name } </p>
