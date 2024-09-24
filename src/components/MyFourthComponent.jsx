@@ -9,6 +9,14 @@ export const MyFourthComponent = () => {
     alert("Haz hecho doble click");
   };
 
+  const handleMouseEnter = (e) => {
+    alert("Haz ENTRADO a la Caja");
+  };
+
+  const handleMouseleave = (e) => {
+    alert("Haz SALIDO de la Caja");
+  };
+
   return (
     <div>
       <h1>MyFourthComponent</h1>
@@ -36,6 +44,13 @@ export const MyFourthComponent = () => {
         <button className="btn btn-info" onDoubleClick={handleDoubleClicked}>
           ¡Haz doble Clic!
         </button>
+      </div>
+      <div
+        id="box1"
+        onMouseEnter={(e) => handleMouseEnter(e)}
+        onMouseLeave={(e) => handleMouseleave(e)}
+      >
+        <p>Pasa el mause por la caja azul</p>
       </div>
     </div>
   );
