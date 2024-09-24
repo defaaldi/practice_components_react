@@ -11,8 +11,6 @@ export const MySecondComponent  = () => {
         "Otro libro"
       ];
 
-      //Condicional Ternario
-      //Condicion ? (Si_Verddero) : (Si_Falso)
       return (
         <>
           <h1>SecondComponent</h1>

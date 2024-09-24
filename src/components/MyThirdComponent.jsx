@@ -6,13 +6,14 @@ export const MyThirdComponent = (props) => {
       <ul>
         <li>{props.name}</li>
         <li>{props.last_name}</li>
-        <li>{props.edad}</li>
+        <li>{props.age}</li>
       </ul>
     </div>
   );
 };
-MyThirdComponent.PropTypes = {
+
+MyThirdComponent.propTypes = {
   name: PropTypes.string,
   last_name: PropTypes.string,
-  edad: PropTypes.number,
+  age: PropTypes.string,
 };
